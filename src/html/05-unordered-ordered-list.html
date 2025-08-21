@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+      <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 화면 높이에 맞추기 */
+        }
+        .image {
+            width: 50%; /* 왼쪽에 위치할 이미지의 너비 */
+        }
+        .text {
+            width: 50%; /* 오른쪽에 위치할 텍스트 영역의 너비 */
+            padding: 20px;
+            text-align: left; /* 텍스트 정렬 */
+        }
+      </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <title>순차, 비순차 목록</title>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <h1>목록</h1>
+    <!--ul(요소)에 type(속성)을 추가하면 불릿 변경-->
+    <!--ex):type="circle"-->
+    <!--가급적 속성 변경보다 css로 변경할것-->
+    <h2>비순차 목록</h2>
+    <ul>
+      <li>목록</li>
+      <li>목록</li>
+      <li>목록</li>
+      <li>목록</li>
+    </ul>
+    <h2>순차 목록</h2>
+    <ol start="2">
+      <li>목록1</li>
+      <li>목록2</li>
+      <li value="5">목록3</li>
+      <li>목록4</li>
+    </ol>
+    <h2>UI 실습</h2>
+    
+     <figure>
+      
+      <h1>unordered-ordered-list</h1>
+      
+      <p>다양한 메뉴를 카페 W에서 즐겨보세요.</p>
+      <li>
+        카페W만의 특별함을 겸험할 수 있는 최상의 선택 음료
+        <li>
+          카페W 커피와 완벽한 어울림을 자랑하는 푸드</li>
+          <li>사용한 시도와 디자인으로 가치를 더하는 상품
+        </li>
+        소중한 사람에게 마음을 전하는 가장 좋은 방법 카페 W 카드
+      </li>
+
+      <a><img src="" alt="" /></a>
+      <figcaption>
+       <h2>카페 W 인기 강좌</h2>
+      <ol>
+      <li>UI구조&디자인</li>
+      <li>모바일 웹 UI제작 실습</li>
+      <li>UI 인터랙션 주니어</li>
+      <li>React 프로그래밍</li>
+      </ol>
+ 
+      </figcaption>
+  </body>
+</html>
