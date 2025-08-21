@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <title>섹션과 메인 요소</title>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+    <header>머리말</header>
+    <nav>메뉴</nav>
+    <main>
+      <section>콘텐츠 섹션</section>
+      <article>콘텐츠 섹션</article>
+    </main>
+    <aside>부가 정보</aside>
+    <footer>바닥글</footer>
+    <hr />
+
+    <!--div로만 만든 아주 나쁜 예시 작동은 됨-->
+    <!--role을 추가하면 역할 생김!하지만 가독성이 떨어지니 위에껄로 할것-->
+
+    <div role="banner">헤더</div>
+    <div role="navigation">내비게이션</div>
+    <div role="main">
+      <div role="section">콘텐츠 섹션</div>
+      <div role="article">콘텐츠 섹션</div>
+    </div>
+    <div role="complementary">사이드 바</div>
+    <div role="contentinfo">푸터</div>
+  </body>
+</html>
