@@ -16,64 +16,60 @@
   </head>
   <body>
     <a href="/index.html">Index로 이동</a>
-    <h1>테이블 관련 요소</h1>
+    <h1 id="table-title">테이블 관련 요소</h1>
     <!--colgroup 열을 병합해 가지고있음-->
     <!--위에게 접근성이 더 좋음-->
-    <table>
-      <tr>
-        <!--th는 제목 td 는 데이타-->
-        <!--제목셀(가로)열-->
-        <th id="name">이름</th>
-        <th id="ko">국어</th>
-        <th id="en">영어</th>
+    <table role="table" aria-labelledby="table-title">
+      <tr role="row">
+        <th role="columnheader" id="name">이름</th>
+        <th role="columnheader" id="ko">국어</th>
+        <th role="columnheader" id="en">영어</th>
       </tr>
-      <tr>
-        <!--내용셀(가로)열-->
-        <th id="hong">홍길동</th>
-        <td headers="hong ko">90</td>
-        <td headers="hong en">90</td>
+      <tr role="row">
+        <th role="rowheader" id="hong">홍길동</th>
+        <td role="cell" headers="hong ko">90</td>
+        <td role="cell" headers="hong en">90</td>
       </tr>
-      <tr>
-        <!--내용셀(가로)열-->
-        <th id="lee">이영희</th>
-        <td headers="lee ko">70</td>
-        <td headers="lee en">100</td>
+      <tr role="row">
+        <th role="rowheader" id="lee">이영희</th>
+        <td role="cell" headers="lee ko">70</td>
+        <td role="cell" headers="lee en">100</td>
       </tr>
-      <tr>
-        <th id="ave">평균</th>
-        <td headers="ave ko">80</td>
-        <td headers="ave en">95</td>
+      <tr role="row">
+        <th role="rowheader" id="ave">평균</th>
+        <td role="cell" headers="ave ko">80</td>
+        <td role="cell" headers="ave en">95</td>
       </tr>
     </table>
     <hr />
-    <table>
-      <tr>
+    <table role="table" aria-labelledby="table-title">
+      <tr role="row">
         <!--제목셀(가로)-->
-        <th scope="col">이름</th>
-        <th scope="col">국어</th>
-        <th scope="col">영어</th>
+        <th role="columnheader" scope="col">이름</th>
+        <th role="columnheader" scope="col">국어</th>
+        <th role="columnheader" scope="col">영어</th>
       </tr>
-      <tr>
+      <tr role="row">
         <!--내용셀(열방향)-->
-        <th scope="row">홍길동</th>
-        <td>90</td>
-        <td>90</td>
+        <th role="rowheader" scope="row">홍길동</th>
+        <td role="cell">90</td>
+        <td role="cell">90</td>
       </tr>
-      <tr>
+      <tr role="row">
         <!--내용셀(열방향)-->
-        <th scope="row">이영희</th>
-        <td>70</td>
-        <td>100</td>
+        <th role="rowheader" scope="row">이영희</th>
+        <td role="cell">70</td>
+        <td role="cell">100</td>
       </tr>
-      <tr>
-        <th scope="row">평균</th>
-        <td>80</td>
-        <td>95</td>
+      <tr role="row">
+        <th role="rowheader" scope="row">평균</th>
+        <td role="cell">80</td>
+        <td role="cell">95</td>
       </tr>
-      <tr>
-        <th scope="row">평균 합계</th>
-        열 병합
-        <td colspan="2">175</td>
+      <tr role="row">
+        <th role="rowheader" scope="row">평균 합계</th>
+        <!-- 열 병합 -->
+        <td role="cell" colspan="2">175</td>
       </tr>
     </table>
   </body>
