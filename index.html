@@ -17,39 +17,64 @@
         padding: 40px;
         color: white;
       }
-      a {
-        color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+      .bt {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        text-decoration: none;
+        border-radius: 20px;
+        margin: 5px 0;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
       }
-      a:hover {
-        color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+
+      .bt:hover {
+        background: #fff;
+        color: #000;
+      }
+      .half {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2개의 열 생성 */
+        max-width: auto;
+        margin: left;
       }
     </style>
   </head>
   <body>
     <h1>HTML/CSS</h1>
-    <h2>HTML</h2>
-    <h2>CSS</h2>
 
-    <ul>
-      <li><a href="/src/html/01-basic-structure.html">HTML 기본 구조</a></li>
-      <li><a href="/src/html/02-heading-paragraph.html">제목과 단락</a></li>
-      <li><a href="/src/html/03-image-figure.html">이미지와 피규어</a></li>
-      <li><a href="/src/html/04-anchor.html">하이퍼 링크</a></li>
-      <li><a href="/src/html/05-unordered-ordered-list.html">비순차, 순차 목록</a></li>
-      <li><a href="/src/html/06-definition-list.html">정의형 목록</a></li>
-      <li><a href="/src/html/07-phrasing-element.html">어휘 요소들</a></li>
-      <li><a href="/src/html/08-blockquote-br.html">인용문과 줄바꿈</a></li>
-      <li><a href="/src/html/09-table.html">테이블 관련 요소</a></li>
-      <li><a href="/src/html/10-container-element.html">컨테이너 요소</a></li>
-      <li><a href="/src/html/11-section-main.html">섹션과 메인 요소</a></li>
-      <li><a href="/src/html/12-text-level-element.html">텍스트 레벨 요소</a></li>
-      <li><a href="/src/html/13-address.html">address 요소</a></li>
-      <li><a href="/src/html/14-picture-source.html">Picture 와 Source 요소</a></li>
-      <li><a href="/src/html/15-video-track.html">video 관련 요소</a></li>
-      <li><a href="/src/html/16-iframe-object.html">inframe,object 요소</a></li>
-      <li><a href="/src/html/17-map-area.html">map,area 요소</a></li>
-      <li><a href="/src/html/18-form-input.html">form (input) 요소</a></li>
-      <li><a href="/src/html/question.html">궁금한건 만들어봐야지</a></li>
-    </ul>
+    <hr />
+    <br />
+    <div class="half">
+      <ul>
+        <h2>HTML</h2>
+        <li><a href="/src/html/01-basic-structure.html" class="bt">HTML 기본 구조</a></li>
+        <li><a href="/src/html/02-heading-paragraph.html" class="bt">제목과 단락</a></li>
+        <li><a href="/src/html/03-image-figure.html" class="bt">이미지와 피규어</a></li>
+        <li><a href="/src/html/04-anchor.html" class="bt">하이퍼 링크</a></li>
+        <li><a href="/src/html/05-unordered-ordered-list.html" class="bt">비순차, 순차 목록</a></li>
+        <li><a href="/src/html/06-definition-list.html" class="bt">정의형 목록</a></li>
+        <li><a href="/src/html/07-phrasing-element.html" class="bt">어휘 요소들</a></li>
+        <li><a href="/src/html/08-blockquote-br.html" class="bt">인용문과 줄바꿈</a></li>
+        <li><a href="/src/html/09-table.html" class="bt">테이블 관련 요소</a></li>
+        <li><a href="/src/html/10-container-element.html" class="bt">컨테이너 요소</a></li>
+        <li><a href="/src/html/11-section-main.html" class="bt">섹션과 메인 요소</a></li>
+        <li><a href="/src/html/12-text-level-element.html" class="bt">텍스트 레벨 요소</a></li>
+        <li><a href="/src/html/13-address.html" class="bt">address 요소</a></li>
+        <li><a href="/src/html/14-picture-source.html" class="bt">Picture 와 Source 요소</a></li>
+        <li><a href="/src/html/15-video-track.html" class="bt">video 관련 요소</a></li>
+        <li><a href="/src/html/16-iframe-object.html" class="bt">inframe,object 요소</a></li>
+        <li><a href="/src/html/17-map-area.html" class="bt">map,area 요소</a></li>
+        <li><a href="/src/html/18-form-input.html" class="bt">form (input) 요소</a></li>
+      </ul>
+      <ul>
+        <h2>CSS</h2>
+        <li><a href="/src/html/question.html" class="bt">궁금한건 만들어봐야지</a></li>
+        <li><a href="index.html" class="bt">아직 css는 안배웠음</a></li>
+      </ul>
+    </div>
   </body>
 </html>
