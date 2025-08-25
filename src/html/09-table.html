@@ -7,6 +7,35 @@
     <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
     <title>테이블 관련 요소</title>
     <style>
+      body {
+        background-color: #031a03d5;
+        align-items: left;
+        padding: 40px;
+        color: white;
+      }
+      a {
+        color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+      }
+      a:hover {
+        color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+      }
+      .bt {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        text-decoration: none;
+        border-radius: 4px;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+      }
+
+      .bt:hover {
+        background: #fff;
+        color: #000;
+      }
       table,
       th,
       td {
