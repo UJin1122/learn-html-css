@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>궁금해서 따라해보는 페이지</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #1a1a1a;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        color: white;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 6px;
+        overflow: hidden;
+        max-width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 100%;
+        display: block;
+      }
+
+      .card-content {
+        background-color: #222;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+
+      .card-content h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .card-content p {
+        margin: 10px 0 20px;
+        font-size: 1rem;
+        color: #ccc;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        text-decoration: none;
+        border-radius: 4px;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+      }
+
+      .btn:hover {
+        background: #fff;
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>anchor</h1>
+
+    <div class="card">
+      <img src="/src/assets/myphoto/술집.jpg" alt="회의 이미지" />
+      <div class="card-content">
+        <h2>RESPONSIVE WEB DESIGN STRATEGIES</h2>
+        <p>반응형 웹디자인 전략</p>
+        <a href="/index.html" class="btn">처음으로</a>
+      </div>
+    </div>
+  </body>
+</html>
