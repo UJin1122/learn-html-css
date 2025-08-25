@@ -42,22 +42,29 @@
   </head>
   <body>
     <a href="/index.html" class="bt">Index로 이동</a>
+    <hr />
     <h1>form (input) 요소</h1>
+
     <!--form>fieldset>legend입력 후 엔터-->
     <form method="post" action="https://formspree.io/f/xeqwwbwk">
       <!--메소드는 입력값이 어떻게 되는가-->
+      <!--네이버가 더 접근성이 좋음-->
+      <!--명시적인 레이블링 : for과 id 를 이용-->
+      <!--카카오는 placeholder(클릭시 사라짐) 사용-->
+      <!--네이버는 레이블 사용(클릭하면 글씨가 작아져서 위로 올라감)-->
+      <!--type을 email로 설정하면 이메일형태가아니면 입력 안됨-->
+      <!--
+      
       <fieldset>
         <legend>USER</legend>
-        <!--명시적인 레이블링 : for과 id 를 이용-->
-        <!--카카오는 placeholder(클릭시 사라짐) 사용-->
-        <!--네이버는 레이블 사용(클릭하면 글씨가 작아져서 위로 올라감)-->
-        <!--네이버가 더 접근성이 좋음-->
+       
+     
         <div>
           <label for="userID">이름</label>
           <input placeholder="ex)홍길동" required id="userID" type="text" name="name" />
         </div>
         <div>
-          <!--type을 email로 설정하면 이메일형태가아니면 입력 안됨-->
+        
           <label for="userEmail">이메일</label>
           <input placeholder="ex)qwer@gmail.com" required id="userEmail" type="email" name="email" />
         </div>
@@ -67,6 +74,70 @@
         </div>
         <button type="submit">전송</button>
       </fieldset>
+    -->
+      <!--label은 절대 누락하면안됨-->
+      <!--https://developer.mozilla.org/ko/docs/Web/HTML/Reference/Elements/label-->
+      <hr />
+      <form action="https://formspree.io/f/xeqwwbwk">
+        <!-- userID : 이름 -->
+        <div>
+          <label for="userID">이름</label>
+          <input required id="userID" type="text" name="name" />
+        </div>
+
+        <!-- userPwd : 비밀번호 -->
+        <div>
+          <label for="userPwd">비밀번호</label>
+          <input required id="userPwd" type="text" name="password" />
+        </div>
+
+        <!-- search : 검색 -->
+        <div>
+          <label for="search">검색어</label>
+          <input placeholder="검색어를 입력하세요" type="search" name="keyword" />
+        </div>
+
+        <!-- userPhone : 전화번호 -->
+        <div>
+          <label for="userPhone">전화번호</label>
+          <input required id="userPhone" type="Phone" name="Phone" />
+        </div>
+
+        <!-- useremail : 이메일 -->
+        <div>
+          <label for="userEmail">이메일</label>
+          <input required id="userEmail" type="email" name="email" />
+        </div>
+
+        <!-- checkbox : 체크박스 -->
+        <div>
+          <div>
+            <input type="checkbox" checked value="html" name="bootcamp" id="bootcampHtml" />
+            <label for="bootcampHtml">HTML</label>
+          </div>
+          <div>
+            <input type="checkbox" value="css" name="bootcamp" id="bootcampCss" />
+            <label for="bootcampCss">CSS</label>
+          </div>
+        </div>
+
+        <!-- radio : 라디오 -->
+        <div>
+          <div>
+            <label><input type="radio" checked name="classRoom" value="classRoom1" /> 회고 1팀</label>
+          </div>
+          <div>
+            <label> <input type="radio" name="classRoom" value="classRoom2" />회고 2팀</label>
+          </div>
+        </div>
+
+        <!-- 버튼 (전속, 초기화, 일반버튼) -->
+        <div>
+          <input type="submit" value="전송" />
+          <input type="reset" value="초기화" />
+          <input type="button" value="버튼" />
+        </div>
+      </form>
     </form>
   </body>
 </html>
