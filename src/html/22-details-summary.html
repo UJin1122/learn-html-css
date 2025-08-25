@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <style>
+      body {
+        background-color: #031a03d5;
+        align-items: left;
+        padding: 40px;
+        color: white;
+      }
+      a {
+        color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+      }
+      a:hover {
+        color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+      }
+      .bt {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: transparent;
+        text-decoration: none;
+        border-radius: 20px;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+      }
+
+      .bt:hover {
+        background: #fff;
+        color: #000;
+      }
+    </style>
+
+    <title>details, summary 요소</title>
+  </head>
+  <body>
+    <a href="/index.html" class="bt">Index로 이동</a>
+    <hr />
+    <h1>details, summary</h1>
+    <div>
+      <details>
+        <summary>국민 내일배움카드</summary>
+        <figure>
+          <img src="/src/assets/thumbnail/learn-card.png" alt="국민 내일배움 카드" />
+          <figcaption><p>급격한 기술 발전 및 노동시장 변화에 대응하는 사회안전망 차원에서 국민 스스로 직업능력개발훈련을 실시할 수 있도록 훈련비 등을 지원받을 수 있는 카드를 의미한다.</p></figcaption>
+        </figure>
+      </details>
+    </div>
+  </body>
+</html>
