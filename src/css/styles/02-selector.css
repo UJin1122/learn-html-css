@@ -4,6 +4,7 @@
 }
 
 body {
+  margin: 20px;
   background-color: #031a03d5;
   align-items: left;
   padding: 40px;
@@ -13,12 +14,15 @@ body {
 a {
   color: rgb(184, 184, 184); /* 기본 링크 색깔 */
   /*텍스트에 가로줄*/
-  text-decoration: line-through;
+  /* text-decoration: line-through;*/
+  text-decoration: none;
 }
 a:hover {
   color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
 }
-/*class 속성*/
+
+/*class속성*/
+/*class는 여러 개를 가질 수 있음*/
 .bt {
   display: inline-block;
   padding: 5px 10px;
@@ -34,6 +38,108 @@ a:hover {
   background: #fff;
   color: #000;
 }
+/*이게 더 가중치가 높음.우선순위 높음*/
 .like {
-  background-color: #000;
+  background-color: var(--mauve);
+  border: 2px dashed rgb(255, 255, 255);
 }
+p {
+  border: 2px solid rgb(70, 122, 79);
+}
+
+/*아이디 선택자*/
+/*아이디는 한개만 가질 수 있음*/
+/*재지정이 안됨(고치기 어려움)*/
+/*쓰지마쓰지마쓰지마쓰지마쓰지마쓰지마쓰지마쓰지마*/
+#lion {
+  background-color: var(--purple);
+}
+/*속성 선택자 [속성]인거를 모두 변경*/
+/*앞에 요소를 붙이면(요소[속성]) 그 요소를 가진 속성만 변경됨*/
+a[href^='https'] {
+  color: mediumseagreen;
+}
+
+/*자손 결합자*/
+.bootcamp p {
+  color: burlywood;
+}
+
+/*자식 결합식*/
+.bootcamp > blockquote > p {
+  padding: 10px;
+}
+/*선택자 그룹화*/
+a,
+h1,
+#lion {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*가상 요소 선택자*/
+/*가상 요소는 전부는 안함*/
+/*before after 안에는 무조곤 content!*/
+/*드래그했을 시 선택이 안됨*/
+h1::before {
+  content: '멋사';
+}
+h1::after {
+  content: '15기';
+}
+p::before {
+  content: 'Open';
+  font-size: 36px;
+  color: #502b2bf1;
+}
+p::first-letter {
+  font-size: 80px;
+  font-weight: 900px;
+}
+p::selection {
+  background-color: rgb(35, 43, 34);
+  color: white;
+}
+
+/*가상 클래스*/
+h1:hover {
+  background-color: #d4c375d5;
+}
+a:link {
+  color: green;
+}
+/*방문한 적 있는 링크*/
+a:visited {
+  color: #ffffff;
+}
+
+a:focus {
+  outline: 2px solid rgb(0, 0, 0);
+  outline-offset: 10px;
+}
+/*
+a:hover,
+a:focus,
+a:active {
+  color: rgb(255, 127, 127);
+}
+  */
+h1:focus {
+  border: 2px dashed black;
+  outline-offset: 10px;
+}
+
+/*frontend 클래스의 첫번째 p만 바꿈*/
+.frontend p:first-child {
+  font-size: 16px;
+}
+/*last-child 는 있지만 다음 거를 호출하고싶으면 nth-child*/
+.frontend p:nth-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+.frontend p:last-child {
+  font-size: 10px;
+}
+
+/*:root = html*/
+/*사용자 정의 속성*/
