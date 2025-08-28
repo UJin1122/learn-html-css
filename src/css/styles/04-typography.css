@@ -1,0 +1,79 @@
+body {
+  background-color: #031a03d5;
+  align-items: left;
+  margin: 40px;
+  color: white;
+}
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*
+.wrapper {
+  font-size: 20px;
+}*/
+/*줄높이*/
+.wrapper blockquote {
+  /*em:상속받은거 X n배*/
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.like {
+  /*rem:기본 폰트의 X n배*/
+  /*뷰포트에 따라 크기달라짐*/
+  font-size: 30px;
+}
+/*글꼴 스타일*/
+h1 {
+  font-style: italic;
+}
+/*자간 조정하기*/
+h1 {
+  letter-spacing: -0.02em;
+}
+
+/* 정렬 */
+.bootcamp {
+  height: 200px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
+  background-color: black;
+  /*채고로 많이씀*/
+  text-align: center;
+  align-content: center;
+}
+/*글자 그림자*/
+/* 글자 그림자 */
+.bootcamp {
+  text-shadow:
+    1px 1px 2px red,
+    2px 2px 2px orange,
+    3px 3px 2px yellow,
+    4px 4px 2px green,
+    5px 5px 2px blue,
+    6px 6px 2px darkblue,
+    7px 7px 2px purple;
+}
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
