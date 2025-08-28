@@ -1,0 +1,39 @@
+/* *은 전체 선택자 */
+* {
+  font-size: 24px;
+}
+
+body {
+  background-color: #031a03d5;
+  align-items: left;
+  padding: 40px;
+  color: white;
+}
+/* 요소(type) 선택자*/
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+  /*텍스트에 가로줄*/
+  text-decoration: line-through;
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+/*class 속성*/
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+.like {
+  background-color: #000;
+}
