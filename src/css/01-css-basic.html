@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 기초</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <style>
+      body {
+        background-color: #fcf;
+      }
+    </style>
+    <!--마지막 선언이 적용됨-->
+    <link rel="stylesheet" href="/src/css/styles/01-css-basic.css" />
+  </head>
+
+  <!--<body style="background-color: #cff;">-->
+  <body>
+    <a href="/index.html" class="bt">Index로 이동</a>
+    <hr />
+    <div style="line-height: 2">
+      <h1>CSS 기초</h1>
+      <h2>CSS를 HTML에 적용하는 세 가지 방법</h2>
+      <h3>External Style Sheet : 외부 스타일</h3>
+      <p>CSS 파일을 별도로 생성하여 HTML 문서에 연결하는 방식으로 &lt;link&gt; 요소를 사용하는 방법과 @import 명령을 사용하는 두 가지 방식이 있습니다.</p>
+      <h3>Embedded Style Sheet : 내부 스타일</h3>
+      <p>별도로 CSS 파일을 생성하지 않고 HTML 파일 내에 CSS 코드를 직접 포함하여 스타일을 적용하는 방식으로 CSS 코드는 &lt;style&gt; 요소 내에 선언합니다.</p>
+      <h3>Inline Style Sheet : 인라인 스타일</h3>
+      <p>특정 HTML 요소에 style 속성을 사용하여 CSS 코드를 선언하는 방법입니다.</p>
+    </div>
+  </body>
+</html>
