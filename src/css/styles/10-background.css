@@ -1,0 +1,48 @@
+/*body {
+  background-color: #031a03d5;
+  background-image: url('/src/assets/images/sun.png'), url('/src/assets/images/cloud.png');
+
+  background-repeat: no-repeat;
+  background-size:
+    100px 100px,
+    200px 200px;
+  background-position: 50% 30%;
+  background-attachment: fixed;
+  align-items: left;
+  margin: 40px;
+  color: white;
+}*/
+
+/*backgroud 속성 축약!*/
+/*너무 심하게 불편한듯..보기도 힘들고 난 안쓸래*/
+body {
+  background:
+    url('/src/assets/images/sun.png') no-repeat 50% 30% / 100px 100px fixed,
+    url('/src/assets/images/cloud.png') no-repeat 50% 30% / 100px 100px fixed #031a03d5;
+  align-items: left;
+  margin: 40px;
+  color: white;
+}
+
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
