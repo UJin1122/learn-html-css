@@ -1,0 +1,70 @@
+body {
+  background-color: #031a03d5;
+  margin: 40px;
+  color: white;
+}
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+.wrapper {
+  width: 500;
+  border: 2px solid rgb(138, 153, 51);
+  position: relative;
+}
+/*position:relative*/
+/*부모요소 따라감*/
+.like {
+  background-color: var(--green);
+  position: relative;
+  left: 50px;
+  bottom: 20px;
+}
+/*position:absolute*/
+/*상자 크기만큼만댐*/
+.bootcamp {
+  background-color: #000000;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+/*position:fixed*/
+.school {
+  background-color: #005f08;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+/*position:sticky*/
+h1 {
+  background-color: #b3f3b87e;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+/*
+.lion {
+  background-color: #43a76d;
+  margin-left: 50px;
+  margin-right: -50px;
+}
+*/
