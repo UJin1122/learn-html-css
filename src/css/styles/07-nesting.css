@@ -1,0 +1,60 @@
+body {
+  background-color: #031a03d5;
+  align-items: left;
+  margin: 40px;
+  color: white;
+}
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+
+/*CSS Nesting*/
+
+/*자식 선택자*/
+.likelion {
+  background-color: #ffffff4d;
+  /*안에 빈줄 하나 남기는게 관례*/
+
+  > ul {
+    list-style-image: url(/src/assets/thumbnail/new.png);
+  }
+  /*하위 선택자&문맥 선택자*/
+  ul {
+    padding-left: 40px;
+  }
+  li {
+    margin: 10px 0;
+
+    li:first-child {
+      color: red;
+    }
+  }
+
+  .sub-last {
+    background-color: black;
+
+    &:hover {
+      background-color: rgb(42, 56, 42);
+      color: #fff;
+    }
+  }
+}
