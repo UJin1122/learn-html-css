@@ -1,0 +1,124 @@
+body {
+  background-color: #031a03d5;
+  align-items: left;
+  margin: 20px;
+  color: white;
+}
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+/*블록 상자*/
+h1 {
+  background-color: darkslategrey;
+}
+p {
+  background-color: #000000b0;
+  margin-block: 10px;
+}
+.bootcamp {
+  border: 2px solid rgb(56, 100, 56);
+  width: 500px;
+  /*부모 크기에 따라 border 가 변하는 것을 볼 수 있음*/
+}
+/*인라인 상자*/
+strong {
+  background-color: rgb(99, 128, 52);
+  /*에러가 아니지만 실행되지 않음*/
+  width: 100px;
+  /*밑의 코드가 있어야 실행됨*/
+  /*F12관리자도구 켜서 한번 찾아볼 것*/
+  display: inline-block;
+}
+
+/*안쪽 여백*/
+.like {
+  margin-bottom: 30px;
+}
+.lion {
+  padding: 10px 20px;
+}
+.love {
+  /*%는 화면 너비에 따라 바뀜*/
+  /*기준은 부모 박스*/
+  padding-left: 20%;
+}
+
+.front {
+  padding-left: 3em;
+}
+/*얘의 20%는 갱장히 작은 걸 볼 수 있음*/
+/*위아래 기준은 무조건 너비기준임*/
+.end {
+  padding-left: 20%;
+  padding-top: 20%;
+}
+/*바깥쪽 여백 margin*/
+.euid {
+  border: 2px solid green;
+  width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 20px -20px;
+}
+p {
+  margin: 20px 0px;
+}
+.bootcamp {
+  margin: 0 0 0 auto;
+}
+/*음수 마진*/
+.container {
+  border: 2px solid rebeccapurple;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: 800px;
+  display: flex;
+}
+.container div {
+  width: 80px;
+  height: 80px;
+  border: 1px solid violet;
+  border-radius: 20px;
+  align-content: center;
+  padding-left: 1em;
+}
+.container div:nth-child(n + 2) {
+  /*20만큼 당겨져서 실행*/
+  margin-left: -20px;
+}
+.container div:first-child {
+  background-color: rgb(119, 54, 119);
+}
+.container div:nth-child(2) {
+  background-color: rgb(33, 124, 24);
+}
+.container div:nth-child(3) {
+  background-color: rgb(44, 56, 50);
+}
+.container div:last-child {
+  background-color: #4b4663;
+}
+.container div:hover {
+  z-index: 100;
+  background-color: #000;
+}
