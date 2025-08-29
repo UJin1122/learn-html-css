@@ -26,40 +26,74 @@ a:hover {
   color: #000;
 }
 .wrapper {
-  width: 500;
-  border: 2px solid rgb(138, 153, 51);
+  width: 500px;
+  border: 2px solid red;
   position: relative;
 }
-/*position:relative*/
-/*부모요소 따라감*/
+
+/* positon : relative */
 .like {
-  background-color: var(--green);
+  background-color: rgb(109, 109, 98);
   position: relative;
   left: 50px;
   bottom: 20px;
 }
-/*position:absolute*/
-/*상자 크기만큼만댐*/
+
+/* position: absolute */
 .bootcamp {
-  background-color: #000000;
+  background-color: rgb(88, 57, 88);
   position: absolute;
   left: 50px;
   top: 100px;
 }
-/*position:fixed*/
+
+/* position: fixed */
 .school {
-  background-color: #005f08;
+  background-color: rgb(67, 114, 114);
   position: fixed;
   right: 0;
   bottom: 0;
 }
 
-/*position:sticky*/
+/* position: sticky */
 h1 {
-  background-color: #b3f3b87e;
+  background-color: rgb(27, 77, 27);
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+/* z-index 속성 */
+.frontend,
+.euid {
+  position: relative;
+  padding: 10px;
+}
+
+.frontend {
+  background-color: rgba(255, 255, 0, 0.349);
+  left: 50px;
+  top: 20px;
+  z-index: 1;
+}
+
+.euid {
+  background-color: rgba(255, 166, 0, 0.514);
+  z-index: auto;
+}
+
+.container {
+  background-color: #000;
+  margin-top: 50px;
+
+  p {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid currentColor;
+    position: relative;
+    top: -5px;
+    left: -5px;
+  }
 }
 /*
 .lion {
