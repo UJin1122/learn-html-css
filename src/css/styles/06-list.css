@@ -1,0 +1,66 @@
+body {
+  background-color: #031a03d5;
+  align-items: left;
+  margin: 40px;
+  color: white;
+}
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+/*list-style-type*/
+.likelion {
+  background-color: #ffffff2c;
+}
+.likelion ol {
+  padding-left: 40px;
+  list-style-type: square;
+}
+
+/*list style position*/
+.bootcamp {
+  background-color: #000;
+}
+.bootcamp ul {
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 40px;
+  background-image: url(/src/assets/myphoto/download-Photoroom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*list-style-image*/
+.frontend {
+  background-color: #ffffff2c;
+}
+
+.frontend ul {
+  padding-left: 40px;
+  list-style-position: outside;
+  /*list-style-image: url('/src/assets/thumbnail/new.png');
+  */
+}
+
+.frontend ul {
+  list-style: outside url(/src/assets/thumbnail/new.png);
+}
