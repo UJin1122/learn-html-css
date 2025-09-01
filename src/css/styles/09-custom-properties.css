@@ -1,0 +1,45 @@
+@property --text-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #fffeffad;
+}
+
+body {
+  background-color: #031a03d5;
+  align-items: left;
+  margin: 40px;
+  color: var(--text-color);
+}
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+
+div {
+  /*여기서 파란색으로 색깔을 바꿔도*/
+  --text-color: rgb(39, 39, 167);
+  color: var(--text-color);
+  p {
+    /*다시 원래 색깔로 돌아옴*/
+    color: var(--text-color);
+  }
+}
