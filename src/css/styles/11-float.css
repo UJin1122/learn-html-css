@@ -1,0 +1,58 @@
+body {
+  background-color: #031a03d5;
+  margin: 40px;
+  color: white;
+}
+
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* float */
+.wrapper {
+  background-color: #ffc;
+  width: 500px;
+  margin: 20px 0;
+
+  div {
+    border: 1px solid currentColor;
+    height: 80px;
+    margin: 10px;
+  }
+
+  .box1 {
+    background-color: rgb(88, 58, 47);
+    float: left;
+  }
+
+  .box2 {
+    background-color: rgb(95, 131, 95);
+    float: left;
+  }
+
+  .box3 {
+    background-color: rgb(58, 37, 40);
+    float: left;
+  }
+
+  .box4 {
+    background-color: rgb(97, 138, 138);
+    float: left;
+  }
+}
+.container {
+  background-color: #ffffff67;
+}
