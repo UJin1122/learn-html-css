@@ -18,6 +18,7 @@ body {
   background: #fff;
   color: #000;
 }
+/*figure 요소*/
 
 .sr-only {
   position: absolute;
@@ -31,11 +32,8 @@ body {
   white-space: nowrap;
   border-width: 0;
 }
-/* 아바타 컴포넌트 */
-.avatar {
-  /* 영역이 잘 선택되었는지 확인하는 방법 - 배경 또는 박스 그림자 */
-  background-color: #ffc;
 
+.avatar-img {
   --size: 64px;
 
   width: var(--size);
@@ -67,3 +65,61 @@ body {
     background-color: #dbdbdb;
   }
 }
+
+/* <button> 요소 */
+.avatar-button {
+  background-color: transparent;
+  padding: 0;
+  border: 0 none;
+  position: relative;
+  vertical-align: top;
+
+  --size: 64px;
+
+  width: var(--size);
+  height: var(--size);
+  /* aspect-ratio: 1/1; */
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 28.125%;
+    height: 28.125%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &[aria-label='online']::after {
+    background-color: #4cfe88;
+  }
+
+  &[aria-label='offline']::after {
+    background-color: #dbdbdb;
+  }
+}
+/*아바타 레이아웃*/
+.avatar-list {
+  display: flow-root;
+  width: 400px;
+  border: 2px solid rgba(0, 0, 0, 0.055);
+  padding: 10px 30px;
+
+  li {
+    margin: 10px;
+    float: left;
+  }
+}
+
+/*버튼과 레이아웃은 분리해서 만들어야함
+그래야 나중에 재활용할때도 편함
+jpg는 webp의 10배 용량
+변환해서 사용할 것*/
