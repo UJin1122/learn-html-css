@@ -1,0 +1,92 @@
+body {
+  background-color: #031a03d5;
+  align-items: left;
+  padding: 40px;
+  color: white;
+}
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+
+.like {
+  background: rgba(255, 255, 0, 0.589);
+  /*width: 400px;*/
+  inline-size: 400px;
+  /*height: 100px;*/
+  block-size: 100px;
+}
+
+.lion {
+  background: pink;
+
+  padding-block: 20px;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
+
+  margin-inline: 20px;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+}
+
+/*float:left or right/inline-start or inline-end*/
+.bootcamp {
+  background: aquamarine;
+  strong {
+    background: rgba(255, 166, 0, 0.452);
+    float: inline-start;
+  }
+}
+
+/*position-top,right,bottom,left*/
+/*inset-inline*/
+.frontend {
+  background: #ffffff75;
+  padding: 20px;
+  position: relative;
+
+  strong {
+    background: #4b202069;
+    position: absolute;
+
+    /*부모 크기만큼 늘어남*/
+    /*
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    */
+    inset: 0;
+  }
+}
+
+/*border*/
+.euid {
+  background: #0aa30a3f;
+  padding: 10px;
+  border-top: 2px solid red;
+  border-bottom: 2px dashed blue;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-block-end: 2px solid #000;
+}
+
+/*inline 방향과 block 방향을 알고있을것*/
