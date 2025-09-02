@@ -1,0 +1,65 @@
+body {
+  background-color: #031a03d5;
+  align-items: left;
+  padding: 40px;
+  color: white;
+}
+a {
+  color: rgb(184, 184, 184); /* 기본 링크 색깔 */
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 0, 0); /* 마우스를 올렸을 때 색깔 */
+}
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+/*유틸리티 바*/
+/*
+ul {
+  text-align: right;
+
+  li {
+    display: inline-block;
+  }
+  span {
+    padding: 8px;
+  }
+}
+*/
+
+.utility-bar {
+  text-transform: uppercase;
+  /*공백문자를 없애는 방법*/
+  /*이렇게하면 글자가 안보임*/
+  font-size: 0;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    /*inline-block 사용시 공백문자 사용되는 걸 볼 수 있음
+    우리가 사용한 tab키나 enter키가 공백문자로 삽입됨*/
+
+    /*여기서 글자크기 다시 지정하면 공백이 없어지고 글자가 보임*/
+  }
+  a,
+  [aria-hidden='true'] {
+    display: inherit;
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
