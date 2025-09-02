@@ -12,21 +12,24 @@
     <link rel="stylesheet" href="/src/ui/terms/terms.css" />
     <script type="module" src="/src/ui/js/copy-component.js"></script>
   </head>
-  <body>
+  <div>
     <a href="/index.html" class="bt">Index로 이동</a>
     <hr />
     <h1>웹 관련 용어</h1>
     <h2>컴포넌트</h2>
-    <div class="term">
-      <b class="subject">웹 표준 이란?</b>
-      <figure class="thumbnail">
-        <img src="/src/assets/thumbnail/web-standards.png" alt="" />
-      </figure>
-      <p class="description">W3C 단체에서 규졍한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...</p>
+    <div class="ui-component">
+      <div class="term">
+        <b class="subject">웹 표준 이란?</b>
+        <figure class="thumbnail">
+          <img src="/src/assets/thumbnail/web-standards.png" alt="" />
+        </figure>
+        <p class="description">W3C 단체에서 규졍한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...</p>
+      </div>
+      <button type="button" class="copy-component">복사</button>
     </div>
     <h2>레이아웃</h2>
-    <div class="terms">
-      <div class="headline">웹 관련 용어</div>
+    <section class="terms">
+      <h3 class="headline">웹 관련 용어</h3>
       <div class="term">
         <b class="subject">웹 표준 이란?</b>
         <figure class="thumbnail">
@@ -41,6 +44,6 @@
         </figure>
         <p class="description">W3C 단체에서 규졍한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...</p>
       </div>
-    </div>
+    </section>
   </body>
 </html>

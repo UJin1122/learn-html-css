@@ -68,6 +68,7 @@ a:hover {
   border: 1px solid var(--gray-700);
   border-radius: 10px;
   padding: var(--spacing);
+  /*width: 250px;*/
 
   .headline {
     font-size: 1.25rem;
