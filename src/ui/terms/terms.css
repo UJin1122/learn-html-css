@@ -31,7 +31,6 @@ a:hover {
   --accent-color: #296897;
   --text-size: 1rempx;
 
-  background: #ffc;
   display: flow-root;
   font-size: var(--text-size);
 
@@ -49,12 +48,46 @@ a:hover {
 
   .thumbnail {
     float: left;
-    margin-right: 16px;
   }
 
   .description {
     color: #000;
     margin-top: 10px;
     font-size: 1em;
+  }
+}
+/*레이아웃*/
+.terms {
+  --gray-700: #7a7a7a;
+  --gray-600: #cccccc;
+  --gray-500: #eeeeee;
+  --spacing: 1rem;
+
+  color: #000;
+  background: var(--gray-600) linear-gradient(var(--gray-600), var(--gray-500));
+  border: 1px solid var(--gray-700);
+  border-radius: 10px;
+  padding: var(--spacing);
+
+  .headline {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing);
+  }
+
+  .term {
+    margin-top: calc(var(--spacing) - 4px);
+  }
+
+  /*odd홀수번째 even짝수번째*/
+  & .term:nth-child(2n + 1) {
+    .subject,
+    .description {
+      float: left;
+    }
+
+    .thumbnail {
+      float: right;
+    }
   }
 }
