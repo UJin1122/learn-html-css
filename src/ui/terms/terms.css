@@ -29,14 +29,16 @@ a:hover {
 /* 컴포넌트 */
 .term {
   --accent-color: #296897;
+  --text-size: 1rempx;
 
   background: #ffc;
   display: flow-root;
-  font-size: 14px;
+  font-size: var(--text-size);
 
   .subject {
     font-weight: 600;
     color: var(--accent-color);
+    font-size: 1.2em;
   }
 
   .subject,
@@ -53,5 +55,6 @@ a:hover {
   .description {
     color: #000;
     margin-top: 10px;
+    font-size: 1em;
   }
 }
