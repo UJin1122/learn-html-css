@@ -1,0 +1,85 @@
+body {
+  background-color: #031a03d5;
+  padding: 40px;
+  color: white;
+}
+
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+.bt:hover {
+  background: #fff;
+  color: #000;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+h1 {
+  margin-block-end: 20px;
+}
+.members-wrapper {
+  block-size: 500px;
+  overflow: auto;
+  color: #000;
+  table {
+    border: 1px solid #000000fb;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .number {
+    inline-size: 10%;
+  }
+  .name {
+    inline-size: 20%;
+  }
+  .email {
+    inline-size: 30%;
+  }
+
+  .phone {
+    inline-size: 30%;
+  }
+  th,
+  td {
+    text-align: center;
+    padding: 0.5em 1em;
+  }
+
+  th,
+  tfoot {
+    background: var(--black);
+    color: var(--white);
+  }
+  tbody tr:nth-child(2n) {
+    background: var(--gray);
+  }
+  tbody tr:nth-child(2n + 1) {
+    background: white;
+  }
+}
+thead tr {
+  position: sticky;
+  top: 0;
+}
