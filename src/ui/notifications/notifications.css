@@ -66,8 +66,13 @@ body {
   --gray: #9b9a90;
   --white: #fff;
 
+  --point-color: var(--green);
+  --text-color: var(--gray);
+  --bg-color: var(--white);
+
   background: white;
-  border: 1px solid var(--gray);
+  border: 1px solid currentColor;
+  color: var(--text-color);
   border-radius: 0.25rem;
   padding: 1.25rem;
   display: flex;
@@ -77,6 +82,10 @@ body {
 
   .notification-icon {
     flex: 0 0 auto;
+
+    rect {
+      fill: var(--point-color);
+    }
   }
 
   .notification-content {
@@ -86,21 +95,32 @@ body {
     justify-content: space-between;
     row-gap: 4px;
 
+    strong,
+    time {
+      color: var(--point-color);
+    }
+
     strong {
-      color: var(--green);
       font-size: 1.125rem;
       font-weight: 700;
     }
 
     time {
-      color: var(--green);
       font-size: 0.6875rem;
     }
 
     p {
       inline-size: 100%;
-      color: var(--gray);
       font-size: 0.875rem;
     }
+  }
+}
+
+/* 레이아웃 */
+.notification-wrapper {
+  background: #ffc;
+
+  .notification {
+    --point-color: red;
   }
 }
