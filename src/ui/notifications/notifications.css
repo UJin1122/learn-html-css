@@ -118,9 +118,65 @@ body {
 
 /* 레이아웃 */
 .notification-wrapper {
-  background: #ffc;
-
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 30px;
   .notification {
     --point-color: red;
+  }
+  .notification:nth-child(2) {
+    --point-color: blue;
+  }
+  .notification:nth-child(3) {
+    --point-color: plum;
+  }
+  .notification:nth-child(4) {
+    --point-color: green;
+  }
+}
+/*
+@media (min-width: 601px) {
+  .notification-wrapper {
+    --gap: 20px;
+
+    flex-flow: row wrap;
+    column-gap: var(--gap);
+
+    .notification {
+      inline-size: calc(50% - (var(--gap) / 2));
+    }
+  }
+
+  @media (min-width: 1001px) {
+    .notification-wrapper {
+      --gap: 20px;
+      flex-wrap: nowrap;
+    }
+  }
+}
+*/
+/* 레이아웃 */
+.notification-wrapper {
+  --gap: 30px;
+
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: var(--gap);
+
+  @media (width > 600px) {
+    column-gap: var(--gap);
+  }
+
+  .notification {
+    inline-size: 100%;
+
+    @media (width > 600px) {
+      inline-size: calc((100% - var(--gap) * 1) / 2);
+    }
+
+    @media (width > 1000px) {
+      inline-size: calc((100% - var(--gap) * 3) / 4);
+    }
   }
 }
