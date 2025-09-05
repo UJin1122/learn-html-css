@@ -1,0 +1,37 @@
+.bt {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #3047cc;
+  color: #3047cc;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.bt:hover {
+  background: #7979797e;
+  color: #3047cc;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+/*미디어 쿼리*/
+/*
+body {
+  margin: 40px;
+  background: var(--white);
+  color: var(--black);
+
+  @media (prefers-color-scheme: dark) {
+    background: var(--black);
+    color: var(--gray);
+  }
+}*/
+
+/*light-dark() 함수*/
+body {
+  margin: 40px;
+  color: light-dark(var(--white), var(--black));
+  background: light-dark(var(--black), var(--gray));
+}
