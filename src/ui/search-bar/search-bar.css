@@ -76,8 +76,28 @@ body {
   }
 }
 
+.input {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 0.5em;
+
+  label {
+    flex: 0 0 auto;
+  }
+
+  input {
+    flex: 1 1 0;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    padding: 0.125em 0.5em;
+    border: 0 none;
+    background: none;
+  }
+}
+
 /* 버튼 */
-/* 버튼 */
+
 .circle-gradient {
   --size: 24px;
   --start-color: var(--green-200);
@@ -99,5 +119,105 @@ body {
     aspect-ratio: 1/1;
     background: var(--white);
     border-radius: inherit;
+  }
+}
+/*검색바*/
+/*내 코드
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #00c73c;
+  border-radius: 50px;
+  padding: 12px 12px 12px 20px;
+  width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .go-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  form {
+    display: contents;
+  }
+}
+.input {
+  flex: 1;
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+  }
+  input::placeholder {
+    color: #aaa;
+  }
+}
+*/
+
+/* 검색바 */
+/*강사님 코드*/
+
+.search-bar {
+  --border-color: var(--green-100);
+  --shadow-color: var(--gray-100);
+
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  padding: 12px 12px 12px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 12px;
+
+  &:focus-within {
+    box-shadow: 0 5px 5px 0 var(--shadow-color);
+  }
+  .go-home {
+    flex: 0 0 auto;
+  }
+
+  form {
+    display: contents;
+  }
+
+  .input {
+    margin-inline-end: 4px;
+    flex: 1 1 0;
+  }
+
+  label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  input {
+    inline-size: 100%;
+    border: 0 none;
+    background: none;
+    appearance: none;
+    outline: 0;
+  }
+
+  /* X 버튼은 Safari, Chrome, Edge, Opera 등 webkit 및 blink 엔진을 사용하는 웹브라우저의 기본 스타일 */
+  /* X 버튼을 제거하고 싶다면 :-webkit-search-cancel-button 선택자를 사용하여 display 속성 값을 none으로 지정 */
+  [type='search']::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  button {
+    flex: 0 0 auto;
   }
 }
